@@ -11,7 +11,6 @@ Recurso de redefinição de senha para operadores.
 🌐 Explorando o Código:
 
 O código-fonte está organizado e bem documentado para fácil compreensão.
-Utilização do padrão de Acesso a Dados (DAL) para operações eficientes no banco de dados.
 
 🤝 Contribuições:
 
@@ -20,5 +19,7 @@ Feedback e contribuições são bem-vindos! Sinta-se à vontade para abrir probl
 💻 Como Iniciar:
 
 Clone o repositório: git clone https://github.com/claytonoliver/CRUD_sistema.git
+
 Abra o projeto no Visual Studio.
+
 Explore e experimente!
