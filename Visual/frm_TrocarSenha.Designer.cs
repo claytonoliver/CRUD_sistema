@@ -1,6 +1,6 @@
 ﻿namespace erp_sistema.visual
 {
-    partial class trocaSenha
+    partial class frm_TrocarSenha
     {
         /// <summary>
         /// Required designer variable.

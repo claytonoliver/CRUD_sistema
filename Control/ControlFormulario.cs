@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace erp_sistema.ControleFormulario
+namespace CRUD_sistema.Control
 {
-    public static class ConfiguracaoFormulario
+    public static class ControlFormulario
     {
         public static void alterarFormulario(Form formulario, Panel painel)
         {

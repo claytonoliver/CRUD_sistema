@@ -7,18 +7,17 @@ using System.Threading.Tasks;
 
 namespace erp_sistema.DAL
 {
-    public class DAL_acesso
+    public class ModelDataBase
     {
         SqlConnection con = new SqlConnection();
-        public DAL_acesso() 
+        public ModelDataBase() 
         {
             con.ConnectionString = @"Data Source=NTCLAYTON\SQLEXPRESS;Initial Catalog=DB_SISTEMA;Integrated Security=True;Encrypt=False";
         }
-
         public SqlConnection Conectar()
-            
+
         {
-            if(con.State == System.Data.ConnectionState.Closed)
+            if (con.State == System.Data.ConnectionState.Closed)
             {
                 con.Open();
             }

@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic.Logging;
+﻿using erp_sistema.DAL;
+using Microsoft.VisualBasic.Logging;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,14 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace erp_sistema.DAL
+namespace CRUD_sistema.Control
 {
-    class DAL_comandos
+    class ControlDataBase : ModelDataBase
     {
-        public bool tem = false;
+        public bool LoginValido = false;
         public string mensagem = "";
         SqlCommand cmd = new SqlCommand();
-        DAL_acesso con = new DAL_acesso();
+        ModelDataBase con = new ModelDataBase();
         SqlDataReader dr;
 
         public bool verificarLogin(string login, string senha)
@@ -26,20 +27,20 @@ namespace erp_sistema.DAL
             try
             {
                 cmd.Connection = con.Conectar();
-                dr = cmd.ExecuteReader(); // LEITURA
+                dr = cmd.ExecuteReader();
 
                 if (dr.HasRows)
                 {
-                    tem = true;
+                    LoginValido = true;
                 }
             }
             catch (SqlException)
             {
 
-                this.mensagem = "Erro com o bano de dados";
+                mensagem = "Erro com o bano de dados";
             }
 
-            return tem;
+            return LoginValido;
         }
 
         public void trocaSenha(string login, string novasenha)
@@ -55,7 +56,7 @@ namespace erp_sistema.DAL
             }
             catch (SqlException ex)
             {
-                this.mensagem = "Erro com o banco de dados: " + ex.Message;
+                mensagem = "Erro com o banco de dados: " + ex.Message;
             }
             finally
             {
@@ -82,7 +83,7 @@ namespace erp_sistema.DAL
             }
             catch (SqlException ex)
             {
-                this.mensagem = "Erro ao carregar dados: " + ex.Message;
+                mensagem = "Erro ao carregar dados: " + ex.Message;
             }
 
             return tabela;
@@ -104,7 +105,7 @@ namespace erp_sistema.DAL
             }
             catch (SqlException ex)
             {
-                this.mensagem = "Erro com o banco de dados: " + ex.Message;
+                mensagem = "Erro com o banco de dados: " + ex.Message;
             }
             finally
             {
@@ -123,7 +124,7 @@ namespace erp_sistema.DAL
             }
             catch (SqlException ex)
             {
-                this.mensagem = "Erro com o banco de dados: " + ex.Message;
+                mensagem = "Erro com o banco de dados: " + ex.Message;
             }
             finally
             {

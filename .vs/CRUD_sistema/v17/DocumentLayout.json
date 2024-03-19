@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\clayt\\Documents\\projetos\\CRUD_sistema\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E060634-774E-43B1-A426-9384FEC30C9F}|CRUD_sistema.csproj|c:\\users\\clayt\\documents\\projetos\\crud_sistema\\control\\controldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E060634-774E-43B1-A426-9384FEC30C9F}|CRUD_sistema.csproj|solutionrelative:control\\controldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E060634-774E-43B1-A426-9384FEC30C9F}|CRUD_sistema.csproj|c:\\users\\clayt\\documents\\projetos\\crud_sistema\\visual\\frm_trocarsenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E060634-774E-43B1-A426-9384FEC30C9F}|CRUD_sistema.csproj|solutionrelative:visual\\frm_trocarsenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControlDataBase.cs",
+              "DocumentMoniker": "C:\\Users\\clayt\\Documents\\projetos\\CRUD_sistema\\Control\\ControlDataBase.cs",
+              "RelativeDocumentMoniker": "Control\\ControlDataBase.cs",
+              "ToolTip": "C:\\Users\\clayt\\Documents\\projetos\\CRUD_sistema\\Control\\ControlDataBase.cs",
+              "RelativeToolTip": "Control\\ControlDataBase.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAASwBAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T01:44:40.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_TrocarSenha.cs",
+              "DocumentMoniker": "C:\\Users\\clayt\\Documents\\projetos\\CRUD_sistema\\Visual\\frm_TrocarSenha.cs",
+              "RelativeDocumentMoniker": "Visual\\frm_TrocarSenha.cs",
+              "ToolTip": "C:\\Users\\clayt\\Documents\\projetos\\CRUD_sistema\\Visual\\frm_TrocarSenha.cs",
+              "RelativeToolTip": "Visual\\frm_TrocarSenha.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAADgvx8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T01:42:46.453Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

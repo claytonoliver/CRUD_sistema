@@ -1,4 +1,5 @@
-﻿using erp_sistema.modelo;
+﻿using CRUD_sistema.Control;
+using CRUD_sistema.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,10 +12,10 @@ using System.Windows.Forms;
 
 namespace erp_sistema.visual
 {
-    public partial class trocaSenha : Form
+    public partial class frm_TrocarSenha : Form
     {
 
-        public trocaSenha()
+        public frm_TrocarSenha()
         {
             InitializeComponent();
         }
@@ -26,9 +27,9 @@ namespace erp_sistema.visual
 
         private void button1_Click(object sender, EventArgs e)
         {
-            controle newcontrole = new controle();
-            
-            newcontrole.Tsenha(txb_login.Text, txb_newsenha.Text, txb_cnewsenha.Text);
+            ControlUsuario controleUsuario = new ControlUsuario();
+
+            controleUsuario.TrocarSenha(txb_login.Text, txb_newsenha.Text, txb_cnewsenha.Text);
 
         }
     }

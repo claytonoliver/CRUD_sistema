@@ -1,5 +1,5 @@
-﻿using erp_sistema.DAL;
-using erp_sistema.modelo;
+﻿using CRUD_sistema.Control;
+using CRUD_sistema.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,14 +15,14 @@ namespace erp_sistema.Visual
 {
     public partial class frm_clientes : Form
     {
-        
+        ControlUsuario controleUsuario = new ControlUsuario();
         public frm_clientes()
         {
             InitializeComponent();
         }
         private void CarregarGridFuncionarios()
         {
-            DAL_comandos comandos = new DAL_comandos();
+            ControlDataBase comandos = new ControlDataBase();
             DataTable tabelaFuncionarios = comandos.GridFuncionarios();
             dataGridView1.DataSource = tabelaFuncionarios;
         }
@@ -33,11 +33,6 @@ namespace erp_sistema.Visual
             {
                 CarregarGridFuncionarios();
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_adicionarUser_Click(object sender, EventArgs e)
@@ -58,8 +53,7 @@ namespace erp_sistema.Visual
 
                 MessageBox.Show($"ID para excluir: {idParaExcluir}");
 
-                controle newcontrole = new controle();
-                newcontrole.ExcluirRegistro(idParaExcluir);
+                controleUsuario.ExcluirUsuario(idParaExcluir);
 
                 dataGridView1.Rows.Remove(linhaSelecionada);
             }

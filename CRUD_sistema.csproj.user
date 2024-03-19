@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Visual\ControleUsuariologado\trocaSenha.cs">
+    <Compile Update="Visual\frm_TrocarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Visual\frm_adicionarCliente.cs">

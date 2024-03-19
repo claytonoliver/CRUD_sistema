@@ -1,4 +1,5 @@
-﻿using erp_sistema.modelo;
+﻿using CRUD_sistema.Control;
+using CRUD_sistema.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace erp_sistema.Visual
     
     public partial class frm_adicionarCliente : Form
     {
+        ControlUsuario controleUsuario = new ControlUsuario();
         public frm_adicionarCliente()
         {
             InitializeComponent();
@@ -35,8 +37,8 @@ namespace erp_sistema.Visual
 
         private void btn_salvar_Click(object sender, EventArgs e)
         {
-            controle Controle = new controle();
-            Controle.incluirUsuario(tb_nome.Text, tb_cep.Text, tb_Rua.Text, tb_numero.Text, tb_cidade.Text);
+
+            controleUsuario.incluirUsuario(tb_nome.Text, tb_cep.Text, tb_Rua.Text, tb_numero.Text, tb_cidade.Text);
             
         }
     }

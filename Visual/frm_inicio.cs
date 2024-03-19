@@ -1,4 +1,4 @@
-﻿using erp_sistema.ControleFormulario;
+﻿using CRUD_sistema.Control;
 using erp_sistema.Visual;
 using System;
 using System.Collections.Generic;
@@ -26,15 +26,15 @@ namespace erp_sistema.visual
         private void trocarSenhaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            trocaSenha altersenha = new trocaSenha();
-            ConfiguracaoFormulario.alterarFormulario(altersenha, pnl_inicio);
+            frm_TrocarSenha altersenha = new frm_TrocarSenha();
+            ControlFormulario.alterarFormulario(altersenha, pnl_inicio);
 
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             frm_clientes clientes = new frm_clientes();
-            ConfiguracaoFormulario.alterarFormulario(clientes, pnl_inicio);
+            ControlFormulario.alterarFormulario(clientes, pnl_inicio);
 
         }
 
